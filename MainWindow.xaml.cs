@@ -58,8 +58,10 @@ namespace Project_datamanipulatie
 
         private void View(object sender, RoutedEventArgs e)
         {
+            
             View_Window view_Window = new View_Window();
             view_Window.Show();
+            this.Close();
         }
 
 

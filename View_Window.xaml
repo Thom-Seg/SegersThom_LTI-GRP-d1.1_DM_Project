@@ -7,6 +7,63 @@
         mc:Ignorable="d"
         Title="View_Window" Height="450" Width="800">
     <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition/>
+            <ColumnDefinition/>
+            <ColumnDefinition/>
+        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="auto"/>
+            <RowDefinition />
+            <RowDefinition />
+            <RowDefinition />
+        </Grid.RowDefinitions>
+
+        <Button Grid.Row="0" Grid.Column="0" Content="Delete" HorizontalAlignment="Center" VerticalAlignment="Center" Width="200" Margin="10,10,10,10" Click="btnDelete"/>
+
+        <Button Grid.Row="0" Grid.Column="1" Content="Edit" HorizontalAlignment="Center" VerticalAlignment="Center" Width="200" Margin="10,10,10,10" Click="btnEdit"/>
+
+        <Button Grid.Row="0" Grid.Column="2" Content="Back" HorizontalAlignment="Center" VerticalAlignment="Center" Margin="10,10,10,10" Width="200" Click="btnBack"/>
+
+        <TextBlock Text="Temporrary Text box" Grid.Column="0" Grid.Row="1" Grid.RowSpan="3" HorizontalAlignment="Center" VerticalAlignment="Center"/>
+
+        <Grid Grid.Row="1" Grid.Column="1" Grid.ColumnSpan="2" Grid.RowSpan="3">
+
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition/>
+                <ColumnDefinition/>
+            </Grid.ColumnDefinitions>
+            <Grid.RowDefinitions>
+                <RowDefinition Height="auto" />
+                <RowDefinition Height="auto" />
+                <RowDefinition Height="auto" />
+                <RowDefinition Height="auto"/>
+                <RowDefinition Height="125"/>
+                <RowDefinition Height="150"/>
+            </Grid.RowDefinitions>
+
+            <TextBlock Text="Movie/Series Title" HorizontalAlignment="Center" VerticalAlignment="Center" Grid.ColumnSpan="2" Margin="10,10,10,10" FontSize="20"/>
+
+            <Label Content="Runtime" Grid.Row="1" HorizontalAlignment="Center" VerticalAlignment="Top"/>
+            <TextBlock Text="2H15" HorizontalAlignment="Center" Grid.Row="2" Margin="0" />
+
+            <Label Content="Ratings" Grid.Column="1" Grid.Row="1" HorizontalAlignment="Center" VerticalAlignment="Top"/>
+            <TextBlock Text="5/10" HorizontalAlignment="Center" Grid.Column="1" Grid.Row="2" Margin="0" />
+            <TextBlock Text="MetaScore" HorizontalAlignment="Center" Grid.Column="1" Grid.Row="3" Margin="0" />
+            <TextBlock Text="IMDB rating" HorizontalAlignment="Center" Grid.Column="1" Grid.Row="4" Margin="0" />
+
+            <Label Content="Description" Grid.Row="3" Margin="10,10,10,10
+                   "/>
+            <TextBlock Text="Here comes the Description of the movie/Series" Grid.Row="4"/>
+            
+            
+
+
+            <TextBlock Text="Main Actor List" Grid.Column="0" Grid.Row="5" FontSize="20" Margin="0,10" HorizontalAlignment="Center"/>
+            <TextBlock Text="Director List" Grid.Column="1" Grid.Row="5" HorizontalAlignment="Center" FontSize="20" Margin="0,10"/>
+            
+        </Grid>
+        
         
     </Grid>
 </Window>

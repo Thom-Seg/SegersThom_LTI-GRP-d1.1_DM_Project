@@ -23,5 +23,30 @@ namespace Project_datamanipulatie
         {
             InitializeComponent();
         }
+
+
+        
+        //Opens the MainWindow, and closes the ViewWindow
+        private void btnBack(object sender, RoutedEventArgs e)
+        {
+            
+            MainWindow main_Window = new MainWindow();
+            main_Window.Show();
+            this.Close();
+        }
+
+
+        //Opens an Edit Window, and closes the ViewWindow
+        private void btnEdit(object sender, RoutedEventArgs e)
+        {
+
+        }
+
+
+        //Deletes the current item from the Database, then opnes the MainWindow and closes the ViewWindow
+        private void btnDelete(object sender, RoutedEventArgs e)
+        {
+
+        }
     }
 }
