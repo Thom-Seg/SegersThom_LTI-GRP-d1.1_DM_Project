@@ -55,13 +55,13 @@
             <Label Content="Description" Grid.Row="3" Margin="10,10,10,10
                    "/>
             <TextBlock Text="Here comes the Description of the movie/Series" Grid.Row="4"/>
-            
-            
 
 
-            <TextBlock Text="Main Actor List" Grid.Column="0" Grid.Row="5" FontSize="20" Margin="0,10" HorizontalAlignment="Center"/>
-            <TextBlock Text="Director List" Grid.Column="1" Grid.Row="5" HorizontalAlignment="Center" FontSize="20" Margin="0,10"/>
-            
+
+
+            <TextBlock Grid.Column="0" Grid.Row="5" FontSize="20" Margin="0,10" HorizontalAlignment="Center"><Run Text="Star"/><Run Text=" Actor"/><Run Text="s"/></TextBlock>
+            <TextBlock Grid.Column="1" Grid.Row="5" HorizontalAlignment="Center" FontSize="20" Margin="0,10"><Run Text="Director"/><Run Text="s"/></TextBlock>
+
         </Grid>
         
         
